@@ -61,8 +61,8 @@
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>ets-dgiwg-core</artifactId>
-      <version>0.4</version>
+      <artifactId>ets-wms13-dgiwg</artifactId>
+      <version>0.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.opengis.cite.teamengine</groupId>
