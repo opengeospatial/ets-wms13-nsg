@@ -1,4 +1,4 @@
-package nsg.wms13.core.dgiwg.testsuite.getcapabilities;
+package org.opengis.cite.wms13.nsg.testsuite.getcapabilities;
 
 import static de.latlon.ets.core.assertion.ETSAssert.assertXPath;
 
@@ -14,7 +14,7 @@ import de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesC
  * @author Jim Beatty (modified/fixed 06-June-2017 for NSG tests) based on main class by:
  * @author <a href="mailto:goltz@lat-lon.de">Lyn Goltz</a>
  */
-public class NSG_GetCapabilitiesContentTest extends GetCapabilitiesContentTest {
+public class NsgGetCapabilitiesContentTest extends GetCapabilitiesContentTest {
 
     // --- Mandatory Metadata --------
 

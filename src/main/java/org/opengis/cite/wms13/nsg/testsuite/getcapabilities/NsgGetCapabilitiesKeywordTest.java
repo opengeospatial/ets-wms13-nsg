@@ -1,4 +1,4 @@
-package nsg.wms13.core.dgiwg.testsuite.getcapabilities;
+package org.opengis.cite.wms13.nsg.testsuite.getcapabilities;
 
 import static org.testng.Assert.assertTrue;
 
@@ -17,7 +17,7 @@ import de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesK
  * @author Jim Beatty (modified/fixed 06-June-2017 for NSG tests) based on main class by:
  * @author <a href="mailto:goltz@lat-lon.de">Lyn Goltz</a>
  */
-public class NSG_GetCapabilitiesKeywordTest extends GetCapabilitiesKeywordTest {
+public class NsgGetCapabilitiesKeywordTest extends GetCapabilitiesKeywordTest {
 
     private static final String KEYWORD_FILE = "nsg.dfdd.keywords";
 

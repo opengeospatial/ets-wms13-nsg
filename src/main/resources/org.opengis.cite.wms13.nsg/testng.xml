@@ -94,7 +94,7 @@
 	<!-- 	<class name="ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest" />  -->
 	
    	<!-- test method: 2 -->		<!-- NSG Req 1 -->
-		<class name="nsg.wms13.core.dgiwg.testsuite.getcapabilities.NSG_GetCapabilitiesContentTest" />
+		<class name="org.opengis.cite.wms13.nsg.testsuite.getcapabilities.NsgGetCapabilitiesContentTest" />
 		
    	<!-- test method: 3 -->
    	    <class name="ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest" />
@@ -103,13 +103,13 @@
 	<!--     <class name="ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest" />   -->
 	
    	<!-- test method: 5 -->   	<!-- NSG Req 2 -->
-		<class name="nsg.wms13.core.dgiwg.testsuite.getcapabilities.NSG_GetCapabilitiesAbstractTest" />
+		<class name="org.opengis.cite.wms13.nsg.testsuite.getcapabilities.NsgGetCapabilitiesAbstractTest" />
 		
    	<!-- test method: 6 -->
 	<!--     <class name="ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest" />  -->
 	
    	<!-- test method: 7 -->		<!-- NSG Req 3 -->
-    	<class name="nsg.wms13.core.dgiwg.testsuite.getcapabilities.NSG_GetCapabilitiesKeywordTest" />
+    	<class name="org.opengis.cite.wms13.nsg.testsuite.getcapabilities.NsgGetCapabilitiesKeywordTest" />
     	
    	<!-- test method: 8 -->
         <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesStyleTest" />
