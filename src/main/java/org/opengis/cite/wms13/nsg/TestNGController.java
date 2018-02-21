@@ -1,4 +1,4 @@
-package ets.wms13.dgiwg;
+package org.opengis.cite.wms13.nsg;
 
 import java.io.File;
 import java.net.URL;
@@ -14,12 +14,12 @@ import de.latlon.ets.wms13.core.AbstractWmsTestNGController;
 /**
  * @author <a href="mailto:goltz@lat-lon.de">Lyn Goltz</a>
  */
-public class WmsDgiwgTestNGController_4_NSG extends AbstractWmsTestNGController {
+public class TestNGController extends AbstractWmsTestNGController {
 
     /**
      * Default constructor uses the location given by the "user.home" system property as the root output directory.
      */
-    public WmsDgiwgTestNGController_4_NSG() {
+    public TestNGController() {
         super();
     }
 
@@ -30,13 +30,13 @@ public class WmsDgiwgTestNGController_4_NSG extends AbstractWmsTestNGController 
      *            A file URI that specifies the location of the directory in which test results will be written. It will
      *            be created if it does not exist.
      */
-    public WmsDgiwgTestNGController_4_NSG( String outputDirUri ) {
+    public TestNGController( String outputDirUri ) {
         super( outputDirUri );
     }
 
     @Override
     protected URL getTestNgConfiguration() {
-        return WmsDgiwgTestNGController_4_NSG.class.getResource( "testng_NSG.xml" );
+        return TestNGController.class.getResource( "testng.xml" );
     }
 
     /**
@@ -50,12 +50,12 @@ public class WmsDgiwgTestNGController_4_NSG extends AbstractWmsTestNGController 
      *             If the test run cannot be executed (usually due to unsatisfied pre-conditions).
      */
     public static void main( String[] args )
-                    throws Exception {
+                            throws Exception {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
         File xmlArgs = findXmlArgs( args );
         Document testRunArgs = db.parse( xmlArgs );
-        WmsDgiwgTestNGController_4_NSG controller = new WmsDgiwgTestNGController_4_NSG();
+        TestNGController controller = new TestNGController();
         Source testResults = controller.doTestRun( testRunArgs );
         System.out.println( "Test results: " + testResults.getSystemId() );
     }

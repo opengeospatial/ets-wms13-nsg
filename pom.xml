@@ -111,7 +111,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>ets.wms13.dgiwg.WmsDgiwgTestNGController_4_NSG</mainClass>
+              <mainClass>org.opengis.cite.wms13.nsg.TestNGController</mainClass>
             </manifest>
           </archive>
           <descriptors>
