@@ -29,10 +29,7 @@
   <!--NSG Test A.1.1 / A.1.2 - DGIWG Service Type / DGIWG WMS Binding;  Requirements 1 , 2-->
   <test name="WMS Queryable">
     <classes>
-      <!--
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.QueryableWMS" />
-      -->
-      <class name="ets.wms13.core.dgiwg.testsuite.QueryableWMS" />
     </classes>
   </test>
 
