@@ -1,22 +1,23 @@
 
-# DGIWG – Web Map Service 1.3 Profile Conformance Test Suite
+# NSG – Web Map Service 1.3 Profile Conformance Test Suite
 
 ## Scope
 
 This executable test suite (ETS) verifies the conformance of the implementation under 
-test (IUT) with respect to DGIWG – Web Map Service 1.3 Profile, [DGIWG-112](https://portal.dgiwg.org/files/?artifact_id=11514).
+test (IUT) with respect to NSG – Web Map Service 1.3 Profile, [NGA.STND.0058_1.0_WMS](https://nsgreg.nga.mil/doc/view?i=4209&amp;month=2&amp;day=8&amp;year=2018]).
 Conformance testing is a kind of "black box" testing that examines the externally 
 visible characteristics or behaviors of the IUT while disregarding any implementation details.
 
 
 ## What is tested
 
-  - All requirements described in "DGIWG – Web Map Service 1.3 Profile".
+  - All requirements described in "NSG – Web Map Service 1.3 Profile".
 
 
 ## What is not tested
 
-  - All recommendations described in "DGIWG – Web Map Service 1.3 Profile".
+  - All recommendations described in "NSG – Web Map Service 1.3 Profile".
+  - ETS WMS 1.3.0 is not integrated, yet. 
 
 
 ## Test requirements
@@ -24,19 +25,19 @@ visible characteristics or behaviors of the IUT while disregarding any implement
 The documents listed below stipulate requirements that must be satisfied by a 
 conforming implementation.
 
+1. [NSG – Web Map Service 1.3 Profile (09-102r3)](https://nsgreg.nga.mil/doc/view?i=4209&amp;month=2&amp;day=8&amp;year=2018)
 1. [DGIWG – Web Map Service 1.3 Profile (09-102r3)](https://portal.opengeospatial.org/files/?artifact_id=66915)
-2. [Web Map Server Implementation Specification, Version 1.3.0 (06-042)](http://portal.opengeospatial.org/files/?artifact_id=14416)
+1. [Web Map Server Implementation Specification, Version 1.3.0 (06-042)](http://portal.opengeospatial.org/files/?artifact_id=14416)
 
 If any of the following preconditions are not satisfied then all tests in the 
 suite will be marked as skipped.
 
 1. WMS capabilities document must be available.
 
-
 ## Test suite structure
 
 The test suite definition file (testng.xml) is located in the root package, 
-`de.latlon.ets.wms13.dgiwg`. A group corresponds to a &lt;test&gt; element, each 
+`org.opengis.cite.wms13.nsg`. A group corresponds to a &lt;test&gt; element, each 
 of which includes a set of test classes that contain the actual test methods. 
 The general structure of the test suite is shown in Table 1.
 
@@ -51,39 +52,64 @@ The general structure of the test suite is shown in Table 1.
   <tbody>
     <tr>
       <td>Preconditions</td>
-      <td>de.latlon.ets.wms13.core.dgiwg.testsuite.Prerequisites</td>
+      <td>
+       <ul>
+         <li>de.latlon.ets.wms13.core.dgiwg.testsuite.Prerequisites</li>
+       </ul>
+      </td>
     </tr>
     <tr>
-      <td>Queryable WMS</td>
-      <td>de.latlon.ets.wms13.core.dgiwg.testsuite.QueryableWMS</td>
+      <td>WMS Basic</td>
+      <td>Not implemented yet</td>
     </tr>
     <tr>
-      <td>Basic service elements - 6.5</td>
-      <td>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest<br/>
-      de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest<br/>
-      de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest<br/>
-      de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.interactive.GetCapabilitiesInEnglishLanguageTest<br/>
-      de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoInEnglishLanguageTest<br/>
-      de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest<br/>
-      de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest<br/>
-      de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest<br/>
-      de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoExceptionInEnglishLanguageTest<br/>
-      de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.interactive.GetMapExceptionInEnglishLanguageTest</td>
+      <td>WMS Queryable</td>
+      <td>
+       <ul>
+         <li>ets.wms13.core.dgiwg.testsuite.QueryableWMS</li>
+       </ul>
+      </td>
     </tr>
     <tr>
-      <td>GetCapabilities Operation - 6.6.1, 6.6.2</td>
-      <td>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.*<br/>
-      (except of classes tested by "Basic service elements - 6.5")</td>
-    </tr>
-    <tr>
-      <td>GetMap Operation - 6.6.3, 6.6.4</td>
-      <td>de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.*<br/>
-      (except of classes tested by "Basic service elements - 6.5")</td>
-    </tr>
-    <tr>
-      <td>GetFeatureInfo Operation - 6.6.5, 6.6.6</td>
-      <td>de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.*<br/>
-      (except of classes tested by "Basic service elements - 6.5")</td>
+      <td>NSG WMS</td>
+      <td>
+       <ul>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.interactive.GetCapabilitiesInEnglishLanguageTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoExceptionInEnglishLanguageTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.interactive.GetMapExceptionInEnglishLanguageTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest</li>
+        <li>org.opengis.cite.wms13.nsg.testsuite.getcapabilities.NsgGetCapabilitiesContentTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest</li>
+        <li>org.opengis.cite.wms13.nsg.testsuite.getcapabilities.NsgGetCapabilitiesAbstractTest</li>
+        <li>org.opengis.cite.wms13.nsg.testsuite.getcapabilities.NsgGetCapabilitiesKeywordTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesStyleTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerStyleTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendFormatTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendUrlTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerScaleDenominatorsTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMinMaxScaleDenominatorsTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesFeatureListUrlTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesDataUrlTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerAttributesTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest</li>
+        <li>ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerNotDefinedTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoInfoFormatTest</li>
+        <li>de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoUomTest</li>
+      </ul>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -132,8 +158,9 @@ have the following values: M (mandatory), O (optional), or C (conditional).
 
 ##  Contributors
 
+  - Jim Beatty
   - Dirk Stenger (latlon)
-  - Richard Martell (Galdos)
+  - Lyn Goltz (latlon)
 
 
 ##  License

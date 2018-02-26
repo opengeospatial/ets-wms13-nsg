@@ -40,6 +40,9 @@
   </issueManagement>
   <developers>
     <developer>
+      <name>Jim Beatty</name>
+    </developer>
+    <developer>
       <name>D. Stenger</name>
       <url>https://github.com/dstenger</url>
       <timezone>Europe/Berlin</timezone>

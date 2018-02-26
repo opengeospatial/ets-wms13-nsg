@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ctl:package xmlns:interactive="https://lat-lon.de/wms-1.3.0/dgiwg/ctl/interactive.xml" 
-  xmlns:functions="https://cite.opengeospatial.org/wms-1.3.0/src/ctl/functions.xml"
-  xmlns:wms="http://www.opengis.net/wms" 
-  xmlns:ctl="http://www.occamlab.com/ctl" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-  xmlns:itu="java:de.latlon.ets.wms13.core.util.interactive.InteractiveTestUtils">
+<ctl:package
+        xmlns:interactive="https://cite.opengeospatial.org/wms-1.3.0/nsg/src/ctl/interactive.xml"
+        xmlns:functions="https://cite.opengeospatial.org/wms-1.3.0/src/ctl/functions.xml"
+        xmlns:wms="http://www.opengis.net/wms"
+        xmlns:ctl="http://www.occamlab.com/ctl" xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+        xmlns:itu="java:de.latlon.ets.wms13.core.util.interactive.InteractiveTestUtils">
 
   <ctl:function name="interactive:capabilitiesInEnglishLanguage">
     <ctl:param name="wms.capabilities.url">A string containing the wms capabilities url.</ctl:param>

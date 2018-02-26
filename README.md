@@ -1,10 +1,7 @@
-# Test Suite for the DGIWG WMS Profile
+# Test Suite for the NSG WMS 1.3 Profile
 
 This test suite verifies that a Web Map Service (WMS) component meets the requirements of the 
-DGIWG WMS application profile, [DGIWG-112](https://portal.dgiwg.org/files/?artifact_id=11514]).
-A conforming implementation must also satisfy the constraints of the **Queryable WMS** conformance 
-class as defined in the base [WMS 1.3 standard](http://www.opengeospatial.org/standards/wms).
-
+NSG WMS application profile, [NGA.STND.0058_1.0_WMS](https://nsgreg.nga.mil/doc/view?i=4209&amp;month=2&amp;day=8&amp;year=2018]).
 
 ## How to run the tests
 
@@ -13,7 +10,7 @@ class as defined in the base [WMS 1.3 standard](http://www.opengeospatial.org/st
 You can use a Java IDE such as Eclipse, NetBeans, or IntelliJ to run the test suite. 
 Clone the repository and build the project. The runtime configuration is summarized below.
 
-__Main class__: `de.latlon.ets.wms13.dgiwg.WmsDgiwgTestNGController`
+__Main class__: `org.opengis.cite.wms13.nsg.TestNGController`
 
 __Arguments__: The first argument must refer to an XML properties file containing the 
 required test run argument (a reference to a WMS 1.3 capabilities document). If not specified, 
@@ -39,10 +36,9 @@ installation may be used instead (for example: http://localhost:8080/teamengine)
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties version="1.0">
-  <comment>Test run arguments (ets-dgiwg-wms13)</comment>
+  <comment>Test run arguments (ets-wms13-nsg)</comment>
   <entry key="wms"></entry>
   <entry key="vector">false</entry>
-  <entry key="tes">http://cite.opengeospatial.org/te2/</entry>
 </properties>
 ```
 
@@ -56,7 +52,7 @@ One of the build artifacts is an "all-in-one" JAR file that includes the test su
 bundled together with all of its dependencies. This makes it very easy to execute the 
 test suite in a command shell like so:
 
-`java -jar ets-dgiwg-wms-${version}-aio.jar  [test-run-props.xml]`
+`java -jar ets-wms13-nsg-${version}-aio.jar  [test-run-props.xml]`
 
 
 ### OGC test harness
@@ -72,9 +68,9 @@ harness yourself and use a local installation.
 
 If you would like to get involved, you can:
 
-* [Report an issue](https://github.com/opengeospatial/ets-dgiwg-wms13/issues) such as a defect or an 
+* [Report an issue](https://github.com/opengeospatial/ets-wms13-nsg/issues) such as a defect or an 
 enhancement request
-* Help to resolve an [open issue](https://github.com/opengeospatial/ets-dgiwg-wms13/issues?q=is%3Aopen)
+* Help to resolve an [open issue](https://github.com/opengeospatial/ets-wms13-nsg/issues?q=is%3Aopen)
 * Fix a bug: Fork the repository, apply the fix, and create a pull request
 * Add new tests: Fork the repository, implement (and verify) the tests on a new topic branch, 
 and create a pull request
