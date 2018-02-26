@@ -6,7 +6,7 @@ import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 import de.latlon.ets.core.assertion.ETSAssert;
-import de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest;
+import de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.AbstractBaseGetCapabilitiesFixture;
 
 /**
  * Tests if the capabilities provides all mandatory and optional service metadata elements.
@@ -14,7 +14,7 @@ import de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesC
  * @author Jim Beatty (modified/fixed 06-June-2017 for NSG tests) based on main class by:
  * @author <a href="mailto:goltz@lat-lon.de">Lyn Goltz</a>
  */
-public class NsgGetCapabilitiesContentTest extends GetCapabilitiesContentTest {
+public class NsgGetCapabilitiesContentTest extends AbstractBaseGetCapabilitiesFixture {
 
     // --- Mandatory Metadata --------
 
