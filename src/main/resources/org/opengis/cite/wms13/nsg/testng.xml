@@ -113,8 +113,6 @@
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest" />
       <!-- test method: 7 -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest" />
-      <!-- test method: 8 -->
-      <class name="ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerNotDefinedTest" />
 
       <!-- ######## -->
       <!-- NSG Test A.2.4 - DGIWG GetFeatureInfo Operation Request - FEATURE COUNT;  Requirement 29 -->
