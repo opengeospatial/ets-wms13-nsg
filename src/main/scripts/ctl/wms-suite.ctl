@@ -5,7 +5,7 @@
   xmlns:saxon="http://saxon.sf.net/" 
   xmlns:interactive="https://lat-lon.de/wms-1.3.0/dgiwg/ctl/interactive.xml"
   xmlns:tec="java:com.occamlab.te.TECore" 
-  xmlns:tng="java:ets.wms13.dgiwg.WmsDgiwgTestNGController_4_NSG">
+  xmlns:tng="java:org.opengis.cite.wms13.nsg.TestNGController">
 
   <ctl:function name="tns:run-ets-${ets-code}">
     <ctl:param name="testRunArgs">A Document node containing test run arguments (as XML properties).</ctl:param>
