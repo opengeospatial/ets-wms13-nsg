@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="dgiwg-wms13-0.4-SNAPSHOT" verbose="0" configfailurepolicy="continue">
-  <!--   <suite name="${ets-code}-${project.version}" verbose="0" configfailurepolicy="continue">  -->
-  <!--   <parameter name="wms" value="" />  -->
-  <!--    <parameter name="wms" value="https://services.nconemap.gov/secure/services/NC1Map_Boundaries/MapServer/WMSServer?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities" />  -->
-  <!--    <parameter name="wms" value="http://708-babylon:8080/geoserver/RPOD_Source/ows?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities" />  -->
-  <!--    <parameter name="wms" value="https://nowcoast.noaa.gov/arcgis/services/nowcoast/mapoverlays_political/MapServer/WMSServer?request=GetCapabilities&amp;service=WMS&amp;version=1.3.0" />-->
-  <!-- 	<parameter name="wms" value="https://services.nationalmap.gov/arcgis/services/Contours/MapServer/WMSServer?request=GetCapabilities&amp;service=WMS&amp;version=1.3.0" />  -->
-  <!--	<parameter name="wms" value="https://openmaps.gov.bc.ca/geo/pub/WHSE_TERRESTRIAL_ECOLOGY.STE_SOIL_SURVEYS_MVW/ows?service=WMS&amp;request=GetCapabilities&amp;version=1.3.0" /> -->
+  <suite name="${ets-code}-${project.version}" verbose="0" configfailurepolicy="continue">
   <parameter name="wms"
              value="http://hazards.fema.gov/gis/nfhl/services/public/NFHLWMS/MapServer/WMSServer?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities" />
   <parameter name="tes" value="" />
