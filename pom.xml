@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.opengis.cite</groupId>
   <artifactId>ets-wms13-nsg</artifactId>
-  <version>0.2</version>
+  <version>0.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>NSG WMS 1.3 profile Conformance Test Suite</name>
@@ -31,7 +31,7 @@
     <url>https://github.com/opengeospatial/ets-wms13-nsg</url>
     <connection>scm:git:https://github.com/opengeospatial/ets-wms13-nsg.git</connection>
     <developerConnection>scm:git:git@github.com:opengeospatial/ets-wms13-nsg.git</developerConnection>
-    <tag>0.2</tag>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub Issue Tracker</system>
