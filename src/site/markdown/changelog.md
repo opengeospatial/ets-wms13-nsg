@@ -1,5 +1,13 @@
 # Release Notes
 
+## 0.3 (2022-08-23)
+
+- [#26](https://github.com/opengeospatial/ets-wms13-nsg/pull/26): Set ets-wms13-dgiwg to v0.5
+- [#25](https://github.com/opengeospatial/ets-wms13-nsg/pull/25): Set ets-dgiwg-core to v0.5
+- [#21](https://github.com/opengeospatial/ets-wms13-nsg/issues/21): Cleanup dependencies
+- [#23](https://github.com/opengeospatial/ets-wms13-nsg/issues/23): Add template to get an XML/JSON response via rest endpoint
+- [#17](https://github.com/opengeospatial/ets-wms13-nsg/issues/17): Disable execution of test "invokeBaseTestuite"
+
 ## 0.2 (2018-08-28)
 
 - Fix [#3](https://github.com/opengeospatial/ets-wms13-nsg/issues/3): Add conformance class configuration into the ets-wms13-nsg test
