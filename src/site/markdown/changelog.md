@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.4 (2022-08-31)
+
+- [#30](https://github.com/opengeospatial/ets-wms13-nsg/pull/30): Set ets-wms13-dgiwg to v0.4
+- [#27](https://github.com/opengeospatial/ets-wms13-nsg/issues/27): Introduce Dockerfile and Maven Docker plugin
+
 ## 0.3 (2022-08-23)
 
 - [#26](https://github.com/opengeospatial/ets-wms13-nsg/pull/26): Set ets-wms13-dgiwg to v0.5
