@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.5 (2023-03-30)
+
+- [#29](https://github.com/opengeospatial/ets-wms13-nsg/issues/29): Update of dependency ets-wms13-dgiwg to v0.5 leads to error
+
 ## 0.4 (2022-08-31)
 
 - [#30](https://github.com/opengeospatial/ets-wms13-nsg/pull/30): Set ets-wms13-dgiwg to v0.4
