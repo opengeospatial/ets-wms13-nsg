@@ -1,5 +1,11 @@
 # Release Notes
 
+## 0.6 (2025-06-18)
+
+Attention: Java 17 and Tomcat 10.1 are required.
+
+- [#33](https://github.com/opengeospatial/ets-wms13-nsg/issues/33): Migrate test suite to TEAM Engine 6 (Java 17)
+
 ## 0.5 (2023-03-30)
 
 - [#29](https://github.com/opengeospatial/ets-wms13-nsg/issues/29): Update of dependency ets-wms13-dgiwg to v0.5 leads to error
